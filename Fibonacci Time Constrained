@@ -1,0 +1,16 @@
+#Objective: create a function that returns fibonacci value of given number n, without using recursion or other time-consuming processes.
+
+def fibonacci(n):
+    a = 0
+    b = 1
+     
+
+         
+    if n == 0: return 0
+    elif n == 1 or n == 2: return 1
+       
+    for x in range(1, n):
+        c = a + b
+        a = b
+        b = c
+    return b
